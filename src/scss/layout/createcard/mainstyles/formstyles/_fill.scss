@@ -1,0 +1,9 @@
+.secondFieldset {
+  &__legend {
+    font-family: $OpenSansRegular;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gunmetal;
+  }
+}
