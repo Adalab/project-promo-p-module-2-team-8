@@ -5,6 +5,11 @@
   width: 281px;
   position: relative;
   padding: 13px 20px 30px 20px;
+  border-top: $white;
+  border-right: $white;
+  border-left: $white;
+  border-bottom: 1px solid $white-two;
+  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
   &__legend {
     font-family: $OpenSansRegular;
     font-weight: 600;

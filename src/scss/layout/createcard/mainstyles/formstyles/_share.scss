@@ -1,0 +1,48 @@
+.thirdFieldset {
+  display: flex;
+  flex-direction: column;
+  width: 281px;
+  position: relative;
+  padding: 13px 20px 30px 20px;
+  margin: 0 20px 0 20px;
+  border-top: $white;
+  border-right: $white;
+  border-left: $white;
+  border-bottom: 1px solid $white-two;
+  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+  &__legend {
+    font-family: $OpenSansRegular;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $gunmetal;
+    width: 281px;
+  }
+  &__button {
+    height: 50px;
+    margin: 30px 24px 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+    color: $white-two;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $OpenSansRegular;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 13px 18px 13px 17px;
+    justify-content: center;
+  }
+}
+.fa-share-nodes {
+  color: $dull-orange;
+  margin-right: 10px;
+}
+.fa-address-card {
+  color: $white-two;
+  width: 25px;
+  height: 22px;
+  margin-right: 10px;
+}
