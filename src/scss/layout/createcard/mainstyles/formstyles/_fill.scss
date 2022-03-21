@@ -1,4 +1,10 @@
 .secondFieldset {
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 281px;
+  position: relative;
+  padding: 13px 20px 30px 20px;
   &__legend {
     font-family: $OpenSansRegular;
     font-weight: 600;
@@ -6,4 +12,50 @@
     text-transform: uppercase;
     color: $gunmetal;
   }
+  &__label {
+    width: 281px;
+    height: 18px;
+    font-family: $OpenSansRegular;
+    font-weight: normal;
+    font-size: 14px;
+    color: $dark-green-blue;
+    margin-top: 20px;
+  }
+  &__input {
+    width: 281px;
+    height: 30px;
+    padding: 3px 205px 7px 9px;
+    border: solid 1px $hospital-green;
+    margin: 7px 0 0;
+  }
+  &__button {
+    width: 140px;
+    height: 30px;
+    padding: 3px 22px 7px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+    color: $white-two;
+    font-family: $OpenSansRegular;
+    font-size: 14px;
+    line-height: 1.43;
+    margin: 7px 20px 0 0;
+  }
+  &__buttoncontainer {
+    height: 30px;
+  }
+}
+.fa-keyboard {
+  color: $dull-orange;
+  margin-right: 10px;
+}
+.fa-angle-up {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+.square {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $hospital-green;
 }
