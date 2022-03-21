@@ -1,0 +1,25 @@
+.footer {
+  border-top: solid 1px $white-two;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    &__small {
+      padding-top: 18px;
+      font-family: $OpenSansRegular;
+      font-size: 14px;
+      line-height: 20px;
+      color: $brownish-grey;
+    }
+
+    &__logo {
+      width: 103px;
+      height: 40px;
+      margin: 12px 47px 0 48px;
+    }
+  }
+}
