@@ -1,2 +1,16 @@
-@import "./mainstyles/section1";
-@import "./mainstyles/form";
+@import './mainstyles/section1';
+@import './mainstyles/form';
+
+.main__container {
+  @media all and(min-width:768px) {
+    padding: 20px 40px;
+    min-height: 856px;
+    display: grid;
+    grid-template-columns: 329px 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+  }
+  @media all and(min-width:1200px) {
+    grid-template-columns: 30vw 1fr;
+  }
+}
