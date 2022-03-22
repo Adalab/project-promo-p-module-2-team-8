@@ -9,6 +9,9 @@
   border-right: $white;
   border-left: $white;
   border-bottom: 1px solid $white-two;
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
   &__legend {
     font-family: $OpenSansRegular;
     font-weight: 600;
@@ -38,6 +41,8 @@
 .fa-share-nodes {
   color: $dull-orange;
   margin-right: 10px;
+  width: 16px;
+  height: 18px;
 }
 .fa-address-card {
   color: $white-two;
@@ -59,6 +64,9 @@
   border-left: $white;
   border-bottom: 1px solid $white-two;
   padding: 20px 15px 30px 15px;
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
   &__title {
     color: $gunmetal;
     font-size: 18px;

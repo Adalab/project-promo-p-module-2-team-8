@@ -9,6 +9,9 @@
   border-right: $white;
   border-left: $white;
   border-bottom: 1px solid $white-two;
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
   &__legend {
     font-family: $OpenSansRegular;
     font-weight: 600;
@@ -31,6 +34,11 @@
     padding: 3px 205px 7px 9px;
     border: solid 1px $hospital-green;
     margin: 7px 0 0;
+    @media all and (min-width: 768px) {
+      width: 329px;
+      height: 30px;
+      padding: 3px 252px 7px 10px;
+    }
   }
   &__button {
     width: 140px;
