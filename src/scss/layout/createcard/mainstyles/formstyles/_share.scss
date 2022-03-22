@@ -19,7 +19,7 @@
   }
   &__button {
     height: 50px;
-    margin: 30px 24px 30px 20px;
+    margin: 30px 24px 0 20px;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
     background-color: $dull-orange;
@@ -44,4 +44,52 @@
   width: 25px;
   height: 22px;
   margin-right: 10px;
+}
+.fourFieldset {
+  margin: 0 20px 0 20px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: $white;
+  border-right: $white;
+  border-left: $white;
+  border-bottom: 1px solid $white-two;
+  padding: 20px 15px 30px 15px;
+  &__title {
+    color: $gunmetal;
+    font-size: 18px;
+    font-family: $OpenSansRegular;
+    font-weight: 600;
+    margin: 0 14px 5px 10px;
+  }
+  &__link {
+    color: $dull-orange;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  &__button {
+    width: 181px;
+    height: 30px;
+    padding: 3px 9px 6px 0;
+    background-color: $azure;
+    color: $white-two;
+    font-family: OpenSans;
+    font-size: 14px;
+    margin: 10px 33px 0 29px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.fa-twitter {
+  width: 18px;
+  height: 18px;
+  margin: 3px 9.5px 0 0;
+  font-size: 18px;
 }
