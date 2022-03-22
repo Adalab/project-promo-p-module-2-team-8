@@ -1,0 +1,92 @@
+.container-desing {
+  border: 0;
+  padding: 27px 20px 30px 20px;
+}
+.title-design {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #54585a;
+}
+.legend {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 0px;
+}
+.far {
+  margin-right: 10px;
+  color: #e17334;
+}
+.container-icon {
+  display: flex;
+  align-items: center;
+}
+.paragraph {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #54585a;
+}
+.container-colors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.design-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.design-list {
+  list-style: none;
+  display: flex;
+}
+.squad1 {
+  width: 30px;
+  height: 25px;
+  background-color: #114e4e;
+}
+.squad2 {
+  width: 30px;
+  height: 25px;
+  background-color: #438792;
+}
+.squad3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a2deaf;
+}
+.squad1-1 {
+  width: 30px;
+  height: 25px;
+  background-color: #420101;
+}
+.squad2-2 {
+  width: 30px;
+  height: 25px;
+  background-color: #bd1010;
+}
+.squad3-3 {
+  width: 30px;
+  height: 25px;
+  background-color: #e95626;
+}
+.squad1-1-1 {
+  width: 30px;
+  height: 25px;
+  background-color: #3e5b65;
+}
+.squad2-2-2 {
+  width: 30px;
+  height: 25px;
+  background-color: #eab052;
+}
+.squad3-3-3 {
+  width: 30px;
+  height: 25px;
+  background-color: #a0c0cf;
+}
