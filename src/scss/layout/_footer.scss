@@ -1,4 +1,9 @@
 .footer {
+  position: sticky;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: $white-three;
   border-top: solid 1px $white-two;
   display: flex;
   justify-content: center;
@@ -8,15 +13,16 @@
     justify-content: center;
     text-align: center;
 
-    &__small {
-      padding-top: 18px;
+    .footer__text {
       font-family: $OpenSansRegular;
+      padding-top: 18px;
+      display: block;
       font-size: 14px;
       line-height: 20px;
       color: $brownish-grey;
     }
 
-    &__logo {
+    .footer__logo {
       width: 103px;
       height: 40px;
       margin: 12px 47px 0 48px;

@@ -1,66 +1,77 @@
 .main__container {
-  width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: $white-four;
+  padding: 0 28px;
 
-  &--title {
+  .main__logo {
+    width: 250px;
+    height: 63px;
+    margin: 125px 0 35px 0;
+  }
+
+  .main__title {
     font-family: $Merriweather;
     font-size: 19px;
     color: $dull-orange;
     text-align: center;
   }
-  &--subtitle {
+
+  .main__subtitle {
     font-family: $OpenSansRegular;
     font-size: 12px;
     color: $dark-green-blue;
+    padding-bottom: 10px;
   }
 
-  &--rectangle {
+  .main__rectangle {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    width: 268px;
-    height: 73.8px;
-    margin: 17.8px 0 0.2px;
-    padding: 15px 20px 9.8px 20px;
+    justify-content: space-between;
+    width: 100%;
     border-radius: 4px;
-    border: solid 1.6px $dull-orange;
-    // falta opcacity
+    border: solid 1.6px $dull-orange-semi;
+    margin-top: 10px;
+    padding: 15px 25px;
 
-    .iconStyle {
+    .main__article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main__article-image {
       width: 32px;
       height: 26px;
     }
+
+    .main__article-text {
+      font-family: $OpenSansRegular;
+      font-size: 12px;
+      color: $gunmetal;
+    }
   }
-}
 
-.main__container--link {
-  width: 129px;
-  height: 42px;
-  margin: 38px 75px 30px 65px;
-  padding: 10px 20px;
-  border-radius: 21px;
-  background-color: $dirty-blue;
-}
+  .main__link {
+    width: 129px;
+    height: 42px;
+    margin: 38px;
+    padding: 10px 20px;
+    border-radius: 21px;
+    background-color: $dirty-blue;
+  }
 
-.linkText {
-  font-family: $OpenSansRegular;
-  font-size: 16px;
-  font-weight: 600;
-  color: $white-two;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.smallText {
-  font-family: $OpenSansRegular;
-  font-size: 12px;
-  color: $gunmetal;
+  .main__link-cta {
+    font-family: $OpenSansRegular;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white-three;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
