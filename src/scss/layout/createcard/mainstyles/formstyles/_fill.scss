@@ -9,6 +9,7 @@
   border-right: $white;
   border-left: $white;
   border-bottom: 1px solid $white-two;
+
   @media all and (min-width: 768px) {
     width: 329px;
   }
@@ -74,4 +75,10 @@
   width: 30px;
   height: 30px;
   border: solid 1px $hospital-green;
+}
+.collapsed {
+  display: none;
+}
+.rotate {
+  transform: rotate(180deg);
 }
