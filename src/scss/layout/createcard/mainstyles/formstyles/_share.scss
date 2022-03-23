@@ -19,6 +19,8 @@
     text-transform: uppercase;
     color: $gunmetal;
     width: 281px;
+    display: flex;
+    justify-content: flex-start;
   }
   &__button {
     height: 50px;

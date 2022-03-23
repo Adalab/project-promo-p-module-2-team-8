@@ -18,6 +18,8 @@
     font-size: 18px;
     text-transform: uppercase;
     color: $gunmetal;
+    display: flex;
+    justify-content: flex-start;
   }
   &__label {
     width: 281px;
@@ -27,6 +29,8 @@
     font-size: 14px;
     color: $dark-green-blue;
     margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
   }
   &__input {
     width: 281px;
