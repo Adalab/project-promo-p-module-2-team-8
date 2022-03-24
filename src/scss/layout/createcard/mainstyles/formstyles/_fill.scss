@@ -9,12 +9,18 @@
   border-right: $white;
   border-left: $white;
   border-bottom: 1px solid $white-two;
+
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
   &__legend {
     font-family: $OpenSansRegular;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
     color: $gunmetal;
+    display: flex;
+    justify-content: flex-start;
   }
   &__label {
     width: 281px;
@@ -24,6 +30,8 @@
     font-size: 14px;
     color: $dark-green-blue;
     margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
   }
   &__input {
     width: 281px;
@@ -31,6 +39,11 @@
     padding: 3px 205px 7px 9px;
     border: solid 1px $hospital-green;
     margin: 7px 0 0;
+    @media all and (min-width: 768px) {
+      width: 329px;
+      height: 30px;
+      padding: 3px 252px 7px 10px;
+    }
   }
   &__button {
     width: 140px;
@@ -62,4 +75,10 @@
   width: 30px;
   height: 30px;
   border: solid 1px $hospital-green;
+}
+.collapsed {
+  display: none;
+}
+.rotate {
+  transform: rotate(180deg);
 }
