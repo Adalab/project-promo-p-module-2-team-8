@@ -1,6 +1,7 @@
 .container-desing {
   border: 0;
-  padding: 27px 20px 30px 20px;
+  width: 281px;
+  padding: 27px 0px 30px 0px;
 }
 .title-design {
   font-size: 18px;
@@ -89,4 +90,11 @@
   width: 30px;
   height: 25px;
   background-color: #a0c0cf;
+}
+
+@media (min-width: 768px) {
+  .container-desing {
+    width: 329px;
+    margin: 0 20px 0 20px;
+  }
 }
