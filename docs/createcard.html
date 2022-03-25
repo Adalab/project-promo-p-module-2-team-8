@@ -27,8 +27,8 @@
             <i class="far fa-trash-alt"></i> reset
           </button>
           <div class="card">
-            <div class="card__personalInfo personalInfoBorderPalette1">
-              <p class="card__personalInfo--name personalInfoNamePalette1">
+            <div class="card__personalInfo personalInfoBorderPalette1 js-borde">
+              <p class="card__personalInfo--name js-personalName personalInfoNamePalette1">
                 Nombre Apellido
               </p>
               <p class="card__personalInfo--job">Front-End developer</p>
@@ -37,39 +37,23 @@
             <nav class="card__socialInfo">
               <ul class="card__socialMenu">
                 <li class="card__rrss">
-                  <a
-                    class="card__rrss--item rrssPalette1"
-                    href=""
-                    target="_blank"
-                    title="phone number"
-                    ><i class="icon fas fa-mobile-alt"></i>
+                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="phone number"><i
+                      class="icon fas fa-mobile-alt"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a
-                    class="card__rrss--item rrssPalette1"
-                    href=""
-                    target="_blank"
-                    title="email address"
-                    ><i class="icon far fa-envelope"></i>
+                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="email address"><i
+                      class="icon far fa-envelope"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a
-                    class="card__rrss--item rrssPalette1"
-                    href=""
-                    target="_blank"
-                    title="linkedin"
-                    ><i class="icon fab fa-linkedin-in"></i>
+                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="linkedin"><i
+                      class="icon fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a
-                    class="card__rrss--item rrssPalette1"
-                    href=""
-                    target="_blank"
-                    title="github"
-                    ><i class="icon fab fa-github-alt"></i>
+                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="github"><i
+                      class="icon fab fa-github-alt"></i>
                   </a>
                 </li>
               </ul>
@@ -77,24 +61,21 @@
           </div>
         </div>
       </section>
-
       <form action="/signup" method="post" class="form js-form">
-        <fieldset class="container-desing">
+        <fieldset class="container-desing js-firstFieldset">
           <legend class="legend">
-            <div class="container-icon">
-              <i class="far fa-object-ungroup box__icon" aria-hidden="true"></i>
-              <h2 class="title-design">Diseña</h2>
+            <div class="container-icon js-titleDesign1">
+              <i class="far fa-object-ungroup box__icon " aria-hidden="true"></i>
+              <h2 class="title-design ">Diseña</h2>
+              <i class="js-iconDesign fas fa-chevron-up box__arrow js-angleDesign" aria-hidden="true"></i>
+
             </div>
-            <i
-              class="js-iconDesign fas fa-chevron-up box__arrow"
-              aria-hidden="true"
-            ></i>
           </legend>
           <section class="container-colors">
             <p class="paragraph">colores</p>
             <div class="colors">
-              <div class="design-option">
-                <input type="radio" id="palette1" name="palette" class="design-input" />
+              <div class="design-option ">
+                <input class="js-input1" type="radio" id="palette1" name="palette" class="design-input" />
                 <label for="palette1">
                   <ul class="design-list">
                     <li class="squad1"></li>
@@ -103,8 +84,8 @@
                   </ul>
                 </label>
               </div>
-              <div class="design-option">
-                <input type="radio" id="palette2" name="palette" class="design-input" />
+              <div class="design-option ">
+                <input class="js-input2" type="radio" id="palette2" name="palette" class="design-input" />
                 <label for="palette2">
                   <ul class="design-list">
                     <li class="squad1-1"></li>
@@ -113,8 +94,8 @@
                   </ul>
                 </label>
               </div>
-              <div class="design-option">
-                <input type="radio" id="palette3" name="palette" class="design-input" />
+              <div class="design-option ">
+                <input class="js-input3" type="radio" id="palette3" name="palette" class="design-input" />
                 <label for="palette3">
                   <ul class="design-list">
                     <li class="squad1-1-1"></li>
@@ -126,7 +107,6 @@
             </div>
           </section>
         </fieldset>
-
         <fieldset class="secondFieldset">
           <h3 class="secondFieldset__legend js-titleFill">
             <i class="fa-solid fa-keyboard icon"></i>Rellena
@@ -232,10 +212,16 @@
       <div class="footer__container">
         <small class="footer__text">Awesome profile-cards @2018</small>
         <a href="http://adalab.es" target="_blank">
-          <img class="footer__logo" src="./assets/images/logo-adalab.png" alt="Logo Adalab" title="Logo de Adalab" />
+          <img
+            class="footer__logo"
+            src="./assets/images/logo_ninfas.png"
+            alt="Logo Ninfas"
+            title="Logo Equipo Ninfas"
+          />
         </a>
       </div>
     </footer>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
