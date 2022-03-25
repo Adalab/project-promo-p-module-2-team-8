@@ -5,7 +5,7 @@
 }
 .title-design {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: #54585a;
@@ -28,7 +28,7 @@
 .paragraph {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #54585a;
 }
 .container-colors {
@@ -90,6 +90,44 @@
   width: 30px;
   height: 25px;
   background-color: #a0c0cf;
+}
+
+.js-darkGreenBlue {
+  color: $dark-green-blue;
+  border: $dark-green-blue;
+}
+.js-colorDirtyBlue {
+  color: $dirty-blue;
+  border: $dirty-blue;
+}
+.js-hospitalGreen {
+  color: $hospital-green;
+  border: $hospital-green;
+}
+.js-driedBlood {
+  color: $dried-blood;
+  border: $dried-blood;
+}
+.js-rustyRed {
+  color: $rusty-red;
+  border: $rusty-red;
+}
+.js-tomato {
+  color: $tomato;
+  border: $tomato;
+}
+.js-slate {
+  color: $slate;
+  border: $slate;
+}
+
+.js-fadedOrange {
+  color: $faded-orange;
+  border: $faded-orange;
+}
+.js-lightGreyBlue {
+  color: $light-grey-blue;
+  border: $light-grey-blue;
 }
 
 @media (min-width: 768px) {
