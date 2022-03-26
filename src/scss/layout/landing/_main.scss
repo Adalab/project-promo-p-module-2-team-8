@@ -10,6 +10,11 @@
     width: 250px;
     height: 63px;
     margin: 125px 0 35px 0;
+    @media all and (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+      margin: 350px 0 35px 0;
+    }
   }
 
   .main__title {
@@ -17,6 +22,9 @@
     font-size: 19px;
     color: $dull-orange;
     text-align: center;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   .main__subtitle {
@@ -24,6 +32,10 @@
     font-size: 12px;
     color: $dark-green-blue;
     padding-bottom: 10px;
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+      margin: 0px 200px 0px 200px;
+    }
   }
 
   .main__rectangle {
@@ -36,6 +48,10 @@
     border: solid 1.6px $dull-orange-semi;
     margin-top: 10px;
     padding: 15px 25px;
+    @media all and (min-width: 768px) {
+      width: 50%;
+      margin-bottom: 187px;
+    }
 
     .main__article {
       display: flex;
@@ -62,6 +78,9 @@
     padding: 10px 20px;
     border-radius: 21px;
     background-color: $dirty-blue;
+    @media all and (min-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
 
   .main__link-cta {
