@@ -17,6 +17,10 @@
   align-items: center;
   padding: 27px 0px;
 }
+.fa-chevron-up {
+  position: absolute;
+  right: 50px;
+}
 .fa-object-ungroup {
   margin-right: 10px;
   color: #e17334;
@@ -36,6 +40,9 @@
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.input {
+  margin-right: 15px;
 }
 .design-option {
   display: flex;
