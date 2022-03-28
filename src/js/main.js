@@ -14,8 +14,10 @@ const angleShare = document.querySelector(".js-angleShare");
 const angleDesign = document.querySelector(".js-angleDesign");
 const cardPersonalInfo = document.querySelector(".js-personalName");
 const borde = document.querySelector(".js-borde");
-const icon = document.querySelector('.js-icon');
-
+const icon1 = document.querySelector('.js-icon1');
+const icon2 = document.querySelector('.js-icon2');
+const icon3 = document.querySelector('.js-icon3');
+const icon4 = document.querySelector('.js-icon4');
 //radio
 const inputRadio1 = document.querySelector(".js-input1");
 const inputRadio2 = document.querySelector(".js-input2");
@@ -46,9 +48,18 @@ inputRadio1.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-driedBlood");
   cardPersonalInfo.classList.remove("js-slate");
   borde.classList.add("js-fadedOrange");
-  icon.classList.add("js-darkGreenBlue");
-  icon.classList.remove('js-driedBlood');
-  icon.classList.remove('js-slate');
+  icon1.classList.add("js-darkGreenBlue");
+  icon1.classList.remove('js-driedBlood');
+  icon1.classList.remove('js-slate');
+  icon2.classList.add("js-darkGreenBlue");
+  icon2.classList.remove('js-driedBlood');
+  icon2.classList.remove('js-slate');
+  icon3.classList.add("js-darkGreenBlue");
+  icon3.classList.remove('js-driedBlood');
+  icon3.classList.remove('js-slate');
+  icon4.classList.add("js-darkGreenBlue");
+  icon4.classList.remove('js-driedBlood');
+  icon4.classList.remove('js-slate');
 });
 
 inputRadio2.addEventListener("click", () => {
@@ -56,9 +67,18 @@ inputRadio2.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-slate");
   borde.classList.add("js-fadedOrange");
-  icon.classList.add("js-driedBlood");
-  icon.classList.remove('js-darkGreenBlue');
-  icon.classList.remove('js-slate');
+  icon1.classList.add("js-driedBlood");
+  icon1.classList.remove('js-darkGreenBlue');
+  icon1.classList.remove('js-slate');
+  icon2.classList.add("js-driedBlood");
+  icon2.classList.remove('js-darkGreenBlue');
+  icon2.classList.remove('js-slate');
+  icon3.classList.add("js-driedBlood");
+  icon3.classList.remove('js-darkGreenBlue');
+  icon3.classList.remove('js-slate');
+  icon4.classList.add("js-driedBlood");
+  icon4.classList.remove('js-darkGreenBlue');
+  icon4.classList.remove('js-slate');
 });
 
 inputRadio3.addEventListener("click", () => {
@@ -66,7 +86,16 @@ inputRadio3.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-driedBlood");
   borde.classList.add("js-fadedOrange");
-  icon.classList.add("js-slate");
-  icon.classList.remove('js-driedBlood');
-  icon.classList.remove('js-darkGreenBlue');
+  icon1.classList.add("js-slate");
+  icon1.classList.remove('js-driedBlood');
+  icon1.classList.remove('js-darkGreenBlue');
+  icon2.classList.add("js-slate");
+  icon2.classList.remove('js-driedBlood');
+  icon2.classList.remove('js-darkGreenBlue');
+  icon3.classList.add("js-slate");
+  icon3.classList.remove('js-driedBlood');
+  icon3.classList.remove('js-darkGreenBlue');
+  icon4.classList.add("js-slate");
+  icon4.classList.remove('js-driedBlood');
+  icon4.classList.remove('js-darkGreenBlue');
 });
