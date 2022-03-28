@@ -14,6 +14,7 @@ const angleShare = document.querySelector(".js-angleShare");
 const angleDesign = document.querySelector(".js-angleDesign");
 const cardPersonalInfo = document.querySelector(".js-personalName");
 const borde = document.querySelector(".js-borde");
+const icon = document.querySelector('.js-icon');
 
 //radio
 const inputRadio1 = document.querySelector(".js-input1");
@@ -45,6 +46,9 @@ inputRadio1.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-driedBlood");
   cardPersonalInfo.classList.remove("js-slate");
   borde.classList.add("js-fadedOrange");
+  icon.classList.add("js-darkGreenBlue");
+  icon.classList.remove('js-driedBlood');
+  icon.classList.remove('js-slate');
 });
 
 inputRadio2.addEventListener("click", () => {
@@ -52,6 +56,9 @@ inputRadio2.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-slate");
   borde.classList.add("js-fadedOrange");
+  icon.classList.add("js-driedBlood");
+  icon.classList.remove('js-darkGreenBlue');
+  icon.classList.remove('js-slate');
 });
 
 inputRadio3.addEventListener("click", () => {
@@ -59,4 +66,7 @@ inputRadio3.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-driedBlood");
   borde.classList.add("js-fadedOrange");
+  icon.classList.add("js-slate");
+  icon.classList.remove('js-driedBlood');
+  icon.classList.remove('js-darkGreenBlue');
 });
