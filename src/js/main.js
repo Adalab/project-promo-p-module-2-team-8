@@ -21,6 +21,9 @@ const border1 = document.querySelector('.js-border1');
 const border2 = document.querySelector('.js-border2');
 const border3 = document.querySelector('.js-border3');
 const border4 = document.querySelector('.js-border4');
+const addImageButton = document.querySelector('.js-secondFieldset__button');
+const createCard = document.querySelector('.js-thirdFieldset__button');
+const shareTwitter = document.querySelector('.js-fourFieldset__button');
 
 //radio
 const inputRadio1 = document.querySelector('.js-input1');
@@ -145,3 +148,9 @@ inputRadio3.addEventListener('click', () => {
   border4.classList.remove('hospitalGreen');
   border4.classList.remove('js-tomato');
 });
+function addImage (event){
+  event.preventDefault();
+}
+addImageButton.addEventListener('click',addImage);
+createCard.addEventListener('click',addImage);
+shareTwitter.addEventListener('click',addImage);
