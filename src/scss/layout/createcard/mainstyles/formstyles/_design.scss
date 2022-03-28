@@ -105,11 +105,14 @@
 }
 .js-colorDirtyBlue {
   color: $dirty-blue;
-  border: $dirty-blue;
+  border-left: $dirty-blue solid 5px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 .js-hospitalGreen {
   color: $hospital-green;
-  border: $hospital-green;
+  border: $hospital-green solid 2px;
 }
 .js-driedBlood {
   color: $dried-blood;
@@ -117,11 +120,14 @@
 }
 .js-rustyRed {
   color: $rusty-red;
-  border: $rusty-red;
+  border: $rusty-red solid 5px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 .js-tomato {
   color: $tomato;
-  border: $tomato;
+  border: $tomato solid 2px;
 }
 .js-slate {
   color: $slate;
@@ -130,11 +136,14 @@
 
 .js-fadedOrange {
   color: $faded-orange;
-  border: $faded-orange;
+  border: $faded-orange solid 5px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 .js-lightGreyBlue {
   color: $light-grey-blue;
-  border: $light-grey-blue;
+  border: $light-grey-blue solid 2px;
 }
 
 @media (min-width: 768px) {
