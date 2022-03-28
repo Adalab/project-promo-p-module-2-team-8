@@ -18,7 +18,9 @@
 
   <body>
     <header class="header">
-      <img class="header__logo" src="./assets/images/awesome.svg" alt="tarjetas molonas" title="logotipo awesome" />
+      <a href="index.html">
+        <img class="header__logo" src="./assets/images/awesome.svg" alt="tarjetas molonas" title="logotipo awesome" />
+      </a>
     </header>
     <div class="mainCreate__container">
       <section class="container__preview">
@@ -28,7 +30,9 @@
           </button>
           <div class="card">
             <div class="card__personalInfo personalInfoBorderPalette1 js-borde">
-              <p class="card__personalInfo--name js-personalName personalInfoNamePalette1">
+              <p
+                class="card__personalInfo--name js-personalName personalInfoNamePalette1"
+              >
                 Nombre Apellido
               </p>
               <p class="card__personalInfo--job">Front-End developer</p>
@@ -37,23 +41,39 @@
             <nav class="card__socialInfo">
               <ul class="card__socialMenu">
                 <li class="card__rrss">
-                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="phone number"><i
-                      class="icon fas fa-mobile-alt"></i>
+                  <a
+                    class="card__rrss--item rrssPalette1 js-border1"
+                    href=""
+                    target="_blank"
+                    title="phone number"
+                    ><i class="icon fas fa-mobile-alt js-icon1"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="email address"><i
-                      class="icon far fa-envelope"></i>
+                  <a
+                    class="card__rrss--item rrssPalette1 js-border2"
+                    href=""
+                    target="_blank"
+                    title="email address"
+                    ><i class="icon far fa-envelope js-icon2"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="linkedin"><i
-                      class="icon fab fa-linkedin-in"></i>
+                  <a
+                    class="card__rrss--item rrssPalette1 js-border3"
+                    href=""
+                    target="_blank"
+                    title="linkedin"
+                    ><i class="icon fab fa-linkedin-in js-icon3"></i>
                   </a>
                 </li>
                 <li class="card__rrss">
-                  <a class="card__rrss--item rrssPalette1" href="" target="_blank" title="github"><i
-                      class="icon fab fa-github-alt"></i>
+                  <a
+                    class="card__rrss--item rrssPalette1 js-border4"
+                    href=""
+                    target="_blank"
+                    title="github"
+                    ><i class="icon fab fa-github-alt js-icon4"></i>
                   </a>
                 </li>
               </ul>
@@ -61,21 +81,28 @@
           </div>
         </div>
       </section>
+
       <form action="/signup" method="post" class="form js-form">
-        <fieldset class="container-desing js-firstFieldset">
+        <fieldset class="container-desing">
           <legend class="legend">
             <div class="container-icon js-titleDesign1">
-              <i class="far fa-object-ungroup box__icon " aria-hidden="true"></i>
-              <h2 class="title-design ">Diseña</h2>
-              <i class="js-iconDesign fas fa-chevron-up box__arrow js-angleDesign" aria-hidden="true"></i>
-
+              <h2 class="title-design">
+                <i class="far fa-object-ungroup"></i>Diseña
+                <i class="fas fa-chevron-up js-angleDesign"></i>
+              </h2>
             </div>
           </legend>
-          <section class="container-colors">
+          <section class="container-colors js-firstFieldset">
             <p class="paragraph">colores</p>
             <div class="colors">
-              <div class="design-option ">
-                <input class="js-input1" type="radio" id="palette1" name="palette" class="design-input" />
+              <div class="design-option">
+                <input
+                  class="input js-input1"
+                  type="radio"
+                  id="palette1"
+                  name="palette"
+                  class="design-input"
+                />
                 <label for="palette1">
                   <ul class="design-list">
                     <li class="squad1"></li>
@@ -84,8 +111,14 @@
                   </ul>
                 </label>
               </div>
-              <div class="design-option ">
-                <input class="js-input2" type="radio" id="palette2" name="palette" class="design-input" />
+              <div class="design-option">
+                <input
+                  class="input js-input2"
+                  type="radio"
+                  id="palette2"
+                  name="palette"
+                  class="design-input"
+                />
                 <label for="palette2">
                   <ul class="design-list">
                     <li class="squad1-1"></li>
@@ -94,8 +127,14 @@
                   </ul>
                 </label>
               </div>
-              <div class="design-option ">
-                <input class="js-input3" type="radio" id="palette3" name="palette" class="design-input" />
+              <div class="design-option">
+                <input
+                  class="input js-input3"
+                  type="radio"
+                  id="palette3"
+                  name="palette"
+                  class="design-input"
+                />
                 <label for="palette3">
                   <ul class="design-list">
                     <li class="squad1-1-1"></li>
@@ -107,6 +146,7 @@
             </div>
           </section>
         </fieldset>
+
         <fieldset class="secondFieldset">
           <h3 class="secondFieldset__legend js-titleFill">
             <i class="fa-solid fa-keyboard icon"></i>Rellena
@@ -137,7 +177,7 @@
                 id="addimage"
                 type="submit"
                 value="Añadir imagen"
-                class="secondFieldset__button"
+                class="secondFieldset__button js-secondFieldset__button"
               />
               <input type="text" class="square" />
             </div>
@@ -183,7 +223,10 @@
             ></i>
           </h3>
           <div class="js-thirdFieldset">
-            <button class="thirdFieldset__button" title="Crear tarjeta">
+            <button
+              class="thirdFieldset__button js-thirdFieldset__button"
+              title="Crear tarjeta"
+            >
               <i class="fa-regular fa-address-card"></i>Crear tarjeta
             </button>
           </div>
@@ -192,13 +235,16 @@
           <h3 class="fourFieldset__title js-titleCard">La tarjeta ha sido creada:</h3>
           <div class="js-fourFieldset">
             <a
-              href="#"
+              href="https://adalab.es/"
               title="Haz click para ir a la tarjeta creada"
               class="fourFieldset__link"
               >http://awesome-profile-card.com?id=A456DF0001</a
             >
 
-            <button class="fourFieldset__button" title="Compartir en twitter">
+            <button
+              class="fourFieldset__button js-fourFieldset__button"
+              title="Compartir en twitter"
+            >
               <i class="fa-brands fa-twitter"></i>Compartir en twitter
             </button>
           </div>
@@ -209,19 +255,11 @@
     </div>
 
     <footer class="footer">
-      <div class="footer__container">
-        <small class="footer__text">Awesome profile-cards @2018</small>
-        <a href="http://adalab.es" target="_blank">
-          <img
-            class="footer__logo"
-            src="./assets/images/logo_ninfas.png"
-            alt="Logo Ninfas"
-            title="Logo Equipo Ninfas"
-          />
-        </a>
-      </div>
+      <small class="footer__text">Awesome profile-cards @2018</small>
+      <a href="http://adalab.es" target="_blank">
+        <img class="footer__logo" src="./assets/images/logo_ninfas.png" alt="Logo Ninfas" title="Logo Equipo Ninfas" />
+      </a>
     </footer>
-
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
