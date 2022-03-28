@@ -18,6 +18,11 @@ const icon1 = document.querySelector('.js-icon1');
 const icon2 = document.querySelector('.js-icon2');
 const icon3 = document.querySelector('.js-icon3');
 const icon4 = document.querySelector('.js-icon4');
+const border1 = document.querySelector('.js-border1');
+const border2 = document.querySelector('.js-border2');
+const border3 = document.querySelector('.js-border3');
+const border4 = document.querySelector('.js-border4');
+
 //radio
 const inputRadio1 = document.querySelector(".js-input1");
 const inputRadio2 = document.querySelector(".js-input2");
@@ -60,6 +65,18 @@ inputRadio1.addEventListener("click", () => {
   icon4.classList.add("js-darkGreenBlue");
   icon4.classList.remove('js-driedBlood');
   icon4.classList.remove('js-slate');
+  border1.classList.add("js-hospitalGreen");
+  border1.classList.remove('js-tomato');
+  border1.classList.remove('js-lightGreyBlue');
+  border2.classList.add("js-hospitalGreen");
+  border2.classList.remove('js-tomato');
+  border2.classList.remove('js-lightGreyBlue');
+  border3.classList.add("js-hospitalGreen");
+  border3.classList.remove('js-tomato');
+  border3.classList.remove('js-lightGreyBlue');
+  border4.classList.add("js-hospitalGreen");
+  border4.classList.remove('js-tomato');
+  border4.classList.remove('js-lightGreyBlue');
 });
 
 inputRadio2.addEventListener("click", () => {
@@ -79,6 +96,18 @@ inputRadio2.addEventListener("click", () => {
   icon4.classList.add("js-driedBlood");
   icon4.classList.remove('js-darkGreenBlue');
   icon4.classList.remove('js-slate');
+  border1.classList.add("js-tomato");
+  border1.classList.remove('hospitalGreen');
+  border1.classList.remove('js-lightGreyBlue');
+  border2.classList.add("js-tomato");
+  border2.classList.remove('hospitalGreen');
+  border2.classList.remove('js-lightGreyBlue');
+  border3.classList.add("js-tomato");
+  border3.classList.remove('hospitalGreen');
+  border3.classList.remove('js-lightGreyBlue');
+  border4.classList.add("js-tomato");
+  border4.classList.remove('hospitalGreen');
+  border4.classList.remove('js-lightGreyBlue');
 });
 
 inputRadio3.addEventListener("click", () => {
@@ -98,4 +127,16 @@ inputRadio3.addEventListener("click", () => {
   icon4.classList.add("js-slate");
   icon4.classList.remove('js-driedBlood');
   icon4.classList.remove('js-darkGreenBlue');
+  border1.classList.add("js-lightGreyBlue");
+  border1.classList.remove('hospitalGreen');
+  border1.classList.remove('js-tomato');
+  border2.classList.add("js-lightGreyBlue");
+  border2.classList.remove('hospitalGreen');
+  border2.classList.remove('js-tomato');
+  border3.classList.add("js-lightGreyBlue");
+  border3.classList.remove('hospitalGreen');
+  border3.classList.remove('js-tomato');
+  border4.classList.add("js-lightGreyBlue");
+  border4.classList.remove('hospitalGreen');
+  border4.classList.remove('js-tomato');
 });
