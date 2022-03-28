@@ -52,7 +52,9 @@ inputRadio1.addEventListener("click", () => {
   cardPersonalInfo.classList.add("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-driedBlood");
   cardPersonalInfo.classList.remove("js-slate");
-  borde.classList.add("js-fadedOrange");
+  borde.classList.add("js-colorDirtyBlue");
+  borde.classList.remove("js-fadedOrange");
+  borde.classList.remove("js-rustyRed");
   icon1.classList.add("js-darkGreenBlue");
   icon1.classList.remove('js-driedBlood');
   icon1.classList.remove('js-slate');
@@ -83,7 +85,9 @@ inputRadio2.addEventListener("click", () => {
   cardPersonalInfo.classList.add("js-driedBlood");
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-slate");
-  borde.classList.add("js-fadedOrange");
+  borde.classList.add("js-rustyRed");
+  borde.classList.remove("js-fadedOrange");
+  borde.classList.remove("js-colorDirtyBlue");
   icon1.classList.add("js-driedBlood");
   icon1.classList.remove('js-darkGreenBlue');
   icon1.classList.remove('js-slate');
@@ -115,6 +119,8 @@ inputRadio3.addEventListener("click", () => {
   cardPersonalInfo.classList.remove("js-darkGreenBlue");
   cardPersonalInfo.classList.remove("js-driedBlood");
   borde.classList.add("js-fadedOrange");
+  borde.classList.remove("js-rustyRed");
+  borde.classList.remove("js-colorDirtyBlue");
   icon1.classList.add("js-slate");
   icon1.classList.remove('js-driedBlood');
   icon1.classList.remove('js-darkGreenBlue');
