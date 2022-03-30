@@ -167,10 +167,19 @@ createCard.addEventListener('click',addImage);
 shareTwitter.addEventListener('click',addImage);
 function handleClickReset(){
 
-  document.getElementById('myform').reset();
+ document.getElementById('myform').reset();
   changeName();
+  resetCard();
 }
 reset.addEventListener('click', handleClickReset);
+function resetCard(){
+  cardPersonalInfo.innerHTML = 'Nombre y Apellidos';
+  cardJob.innerHTML = 'Front-End developer';
+  iconEmail.href = '';
+  iconPhone.href = '';
+  iconGithub.href ='';
+  iconLinkedin.href = '';
+}
 
 function changeName () {
   cardPersonalInfo.innerHTML = name.value;
