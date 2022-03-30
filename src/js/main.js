@@ -41,6 +41,10 @@ const inputRadio1 = document.querySelector('.js-input1');
 const inputRadio2 = document.querySelector('.js-input2');
 const inputRadio3 = document.querySelector('.js-input3');
 
+const inputRadio4 = document.querySelector('.js-input4');
+const inputRadio5 = document.querySelector('.js-input5');
+const inputRadio6 = document.querySelector('.js-input6');
+
 titleDesign1.addEventListener('click', () => {
   console.log('hola');
   firstFieldset.classList.toggle('collapsed');
