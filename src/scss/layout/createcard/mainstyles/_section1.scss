@@ -37,6 +37,7 @@
       line-height: 20px;
       color: $gunmetal;
       margin-bottom: 20px;
+      cursor: pointer;
     }
     &__image {
       background: url(../images/mariposa.jpg);
@@ -72,6 +73,7 @@
           top: 50%;
           transform: translate(-50%, -50%);
           font-size: 18px;
+          cursor: pointer;
         }
       }
     }

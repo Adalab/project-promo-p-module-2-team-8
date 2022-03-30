@@ -1,8 +1,9 @@
 .container-desing {
   border: 0;
   width: 281px;
-  padding: 27px 0px 30px 0px;
+  padding: 27px 0px 0px 0px;
   position: relative;
+  border-bottom: 1px solid $white-two;
   @media all and (min-width: 768px) {
     width: 329px;
   }
@@ -20,11 +21,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 27px 0px;
+
+  /* padding: 27px 0px;*/
 }
 fa-angle-up {
   position: absolute;
   right: 20px;
+  cursor: pointer;
 }
 
 /*.fa-chevron-up {

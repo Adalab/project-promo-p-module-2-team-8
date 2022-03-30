@@ -54,7 +54,7 @@
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     background-color: $dull-orange;
     color: $white-three;
-
+    cursor: pointer;
     font-size: 14px;
     line-height: 1.43;
     margin: 7px 20px 0 0;
@@ -69,8 +69,8 @@
 }
 .fa-angle-up {
   position: absolute;
-  /*top: 13px;*/
   right: 20px;
+  cursor: pointer;
 }
 .square {
   width: 30px;
