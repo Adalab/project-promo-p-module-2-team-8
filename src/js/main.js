@@ -24,7 +24,18 @@ const border4 = document.querySelector('.js-border4');
 const addImageButton = document.querySelector('.js-secondFieldset__button');
 const createCard = document.querySelector('.js-thirdFieldset__button');
 const shareTwitter = document.querySelector('.js-fourFieldset__button');
-
+const reset = document.querySelector('.js-reset');
+const name = document.querySelector('.js-name');
+const job = document.querySelector('.js-job');
+const cardJob = document.querySelector('.js-cardJob');
+const addEmail = document.querySelector('.js-addemail');
+const iconEmail = document.querySelector('.js-iconEmail');
+const addPhone = document.querySelector('.js-addPhone');
+const iconPhone = document.querySelector('.js-iconPhone');
+const iconLinkedin = document.querySelector('.js-iconLinkedin');
+const addLinkedin = document.querySelector('.js-addLinkedin');
+const iconGithub = document.querySelector('.js-iconGithub');
+const addGithub = document.querySelector('.js-addGithub');
 //radio
 const inputRadio1 = document.querySelector('.js-input1');
 const inputRadio2 = document.querySelector('.js-input2');
@@ -154,3 +165,36 @@ function addImage (event){
 addImageButton.addEventListener('click',addImage);
 createCard.addEventListener('click',addImage);
 shareTwitter.addEventListener('click',addImage);
+function handleClickReset(){
+
+  document.getElementById('myform').reset();
+  changeName();
+}
+reset.addEventListener('click', handleClickReset);
+
+function changeName () {
+  cardPersonalInfo.innerHTML = name.value;
+}
+name.addEventListener('keyup',changeName);
+
+function changeJob (){
+  cardJob.innerHTML = job.value;
+}
+job.addEventListener('keyup',changeJob);
+function changeEmail(){
+  iconEmail.href = `mailto:${addEmail.value}`;
+}
+iconEmail.addEventListener('click',changeEmail);
+function changeLinkedin(){
+  iconLinkedin.href = addLinkedin.value;
+}
+iconLinkedin.addEventListener('click',changeLinkedin);
+
+function changeGithub(){
+  iconGithub.href = addGithub.value; 
+}
+iconGithub.addEventListener('click',changeGithub);
+function changePhone(){
+  iconPhone.href = `tel:${addPhone.value}`;
+}
+iconPhone.addEventListener('click',changePhone);
