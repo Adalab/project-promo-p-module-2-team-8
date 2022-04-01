@@ -85,7 +85,7 @@ createCard.addEventListener("click", addImage);
 shareTwitter.addEventListener("click", addImage);
 function handleClickReset() {
   document.getElementById("myform").reset();
-  changeName();
+  /*changeName();*/
   resetCard();
 }
 reset.addEventListener("click", handleClickReset);
@@ -98,7 +98,70 @@ function resetCard() {
   iconLinkedin.href = "";
 }
 
-function changeName() {
+
+const dataObjets = {
+  name: '',
+  job: '',
+  email: '',
+  phone: '',
+  photo: '',
+  linkedin: '',
+  github: '',
+};
+
+
+function keyUpInputs(event) {
+  const ElementTyping = event.target;
+  if (ElementTyping.id === 'completeName') {
+    dataObjets.name = ElementTyping.value;
+  }
+
+  else {
+    ElementTyping.value = 'Nombre y Apellidos';
+  }
+
+
+
+  if (ElementTyping.id === 'marketStall') {
+    dataObjets.job = ElementTyping.value;
+  }
+
+  if (ElementTyping.id === 'addemail') { data.email = ElementTyping.value; }
+
+  if (ElementTyping.id === 'addphone') {
+    dataObjets.phone = ElementTyping.value;
+  }
+
+  if (ElementTyping.id === 'addimage') {
+    dataObjets.photo = ElementTyping.value;
+  }
+
+  if (ElementTyping.id === 'addLinkedin') {
+    dataObjets.linkedin = ElementTyping.value;
+  }
+
+  if (ElementTyping.id === 'addGithub') {
+    dataObjets.github = ElementTyping.value;
+  }
+  renderPreview();
+}
+
+
+
+const fillDiv = document.querySelector('.js-secondFieldset');
+fillDiv.addEventListener('keyup', keyUpInputs)
+
+
+function renderPreview() {
+  cardPersonalInfo.innerHTML = dataObjets.name;
+  cardJob.innerHTML = dataObjets.job;
+  iconEmail.href = dataObjets.email;
+  iconLinkedin.href = dataObjets.linkedin;
+  iconGithub.href = dataObjets.github;
+  iconPhone.href = dataObjets.phone;
+
+}
+/*function changeName() {
   cardPersonalInfo.innerHTML = name.value;
 }
 name.addEventListener("keyup", changeName);
@@ -123,7 +186,7 @@ iconGithub.addEventListener("click", changeGithub);
 function changePhone() {
   iconPhone.href = `tel:${addPhone.value}`;
 }
-iconPhone.addEventListener("click", changePhone);
+iconPhone.addEventListener("click", changePhone);*/
 
 // Change image functionality
 
