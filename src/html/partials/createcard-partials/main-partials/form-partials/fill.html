@@ -12,8 +12,9 @@
       type="text"
       name="Complete Name"
       placeholder="Ej:Sally Jill"
-      class="secondFieldset__input js-name"
+      class="secondFieldset__input js-name js-input"
       required
+      value=""
     />
     <label for="marketStall" class="secondFieldset__label">Puesto</label>
     <input
@@ -21,12 +22,13 @@
       type="text"
       name="Market Stall"
       placeholder="Ej:front-end unicorn"
-      class="secondFieldset__input js-job"
+      class="secondFieldset__input js-job js-input"
       required
+      value=""
     />
     <label for="addimage" class="secondFieldset__label">Imagen de perfil</label>
-    <div class="secondFieldset__buttoncontainer">
-      <button
+    <div class="secondFieldset__buttoncontainer js__profile-image">
+      <!--<button
         id="addimage"
         type="submit"
         value="Añadir imagen"
@@ -34,8 +36,20 @@
         required
       >
         Añadir imagen
-      </button>
-      <input type="text" class="square" />
+      </button>-->
+      <label
+        for="photo"
+        class="label secondFieldset__button js__profile-trigger"
+        >Añadir imagen</label
+      >
+      <input
+        type="text"
+        id="photo"
+        type="file"
+        class="input js__profile-upload-btn"
+      />
+
+      <div type="text" class="square js__profile-preview"></div>
     </div>
     <label for="addemail" class="secondFieldset__label">Email</label>
     <input
@@ -43,7 +57,7 @@
       type="email"
       name="add email"
       placeholder="Ej: sally-hill@gmail.com"
-      class="secondFieldset__input js-addemail"
+      class="secondFieldset__input js-addemail js-input"
       required
     />
     <label for="addphone" class="secondFieldset__label">Teléfono</label>
@@ -52,7 +66,7 @@
       type="text"
       name="add phone"
       placeholder="Ej: 555-55-55-55"
-      class="secondFieldset__input js-addPhone"
+      class="secondFieldset__input js-addPhone js-input"
       required
     />
     <label for="addLinkedin" class="secondFieldset__label">Linkedin</label>
@@ -61,7 +75,7 @@
       type="text"
       name="add Linkedin"
       placeholder="Ej:linkedin.com/in/sally.hill"
-      class="secondFieldset__input js-addLinkedin"
+      class="secondFieldset__input js-addLinkedin js-input"
       required
     />
     <label for="addGithub" class="secondFieldset__label">Github</label>
@@ -70,7 +84,7 @@
       type="text"
       name="add Github"
       placeholder="Ej: @sally-hill"
-      class="secondFieldset__input js-addGithub"
+      class="secondFieldset__input js-addGithub js-input"
       required
     />
   </div>

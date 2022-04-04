@@ -3,13 +3,13 @@ const addImageButton = document.querySelector('.js-secondFieldset__button');
 const createCard = document.querySelector('.js-thirdFieldset__button');
 const shareTwitter = document.querySelector('.js-fourFieldset__button');
 //revisar esto, afecta a formulario
-function addImage(event) {
+/*function addImage(event) {
   event.preventDefault();
-}
+}*/
 
-addImageButton.addEventListener('click', addImage);
+/*addImageButton.addEventListener('click', addImage);
 createCard.addEventListener('click', addImage);
-shareTwitter.addEventListener('click', addImage);
+shareTwitter.addEventListener('click', addImage);*/
 
 // Change image functionality
 

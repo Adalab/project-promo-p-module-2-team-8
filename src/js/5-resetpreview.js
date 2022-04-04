@@ -1,4 +1,7 @@
 'use strict';
+const input = document.querySelectorAll('.js-input');
+
+
 
 const reset = document.querySelector('.js-reset');
 function handleClickReset() {
@@ -13,6 +16,20 @@ function resetCard() {
   iconPhone.href = '';
   iconGithub.href = '';
   iconLinkedin.href = '';
+  dataObjets = {
+    name: '',
+    job: '',
+    email: '',
+    phone: '',
+    photo: '',
+    linkedin: '',
+    github: '',
+  };
+  for (let index = 0; index < input.length; index++) {
+    input[index].value = '';
+
+  }
 }
+
 
 reset.addEventListener('click', handleClickReset);

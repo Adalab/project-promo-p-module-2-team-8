@@ -6,7 +6,7 @@ const iconPhone = document.querySelector('.js-iconPhone');
 const iconLinkedin = document.querySelector('.js-iconLinkedin');
 const iconGithub = document.querySelector('.js-iconGithub');
 const fillDiv = document.querySelector('.js-secondFieldset');
-const dataObjets = {
+let dataObjets = {
   name: '',
   job: '',
   email: '',
