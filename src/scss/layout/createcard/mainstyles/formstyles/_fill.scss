@@ -10,6 +10,10 @@
   border-left: $white;
   border-bottom: 1px solid $white-two;
   font-family: $OpenSansRegular;
+  .input{
+    display: none;
+  }
+  
 
   @media all and (min-width: 768px) {
     width: 329px;
@@ -26,7 +30,6 @@
   &__label {
     width: 281px;
     height: 18px;
-
     font-weight: normal;
     font-size: 14px;
     color: $dark-green-blue;
@@ -49,7 +52,6 @@
   &__button {
     width: 140px;
     height: 30px;
-    padding: 3px 22px 7px;
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     background-color: $dull-orange;
@@ -57,10 +59,18 @@
     cursor: pointer;
     font-size: 14px;
     line-height: 1.43;
-    margin: 7px 20px 0 0;
+    margin: 0px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
   }
   &__buttoncontainer {
     height: 30px;
+    display:flex;
+    justify-content: flex-start;
+    margin-top: 7px;
+  
   }
 }
 .fa-keyboard {
@@ -76,6 +86,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px $hospital-green;
+  background-size: contain;
 }
 .collapsed {
   display: none;

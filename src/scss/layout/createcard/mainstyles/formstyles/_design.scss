@@ -204,6 +204,84 @@ fa-angle-up {
   border: $light-grey-blue solid 2px;
 }
 
+.palette-1 {
+  .card__rrss--item {
+    color: $dark-green-blue;
+    border: 2px solid $hospital-green;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $dirty-blue;
+  }
+  .card__personalInfo--name {
+    color: $dark-green-blue;
+  }
+}
+
+.palette-2 {
+  .card__rrss--item {
+    color: $dried-blood;
+    border: 2px solid $rusty-red;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $tomato;
+  }
+  .card__personalInfo--name {
+    color: $dried-blood;
+  }
+}
+
+.palette-3 {
+  .card__rrss--item {
+    color: $slate;
+    border: 2px solid $faded-orange;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $light-grey-blue;
+  }
+  .card__personalInfo--name {
+    color: $slate;
+  }
+}
+
+.palette-4 {
+  .card__rrss--item {
+    color: $pink;
+    border: 2px solid $yellow;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $green;
+  }
+  .card__personalInfo--name {
+    color: $pink;
+  }
+}
+
+.palette-5 {
+  .card__rrss--item {
+    color: $blue-ocean;
+    border: 2px solid $magenta;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $green-forest;
+  }
+  .card__personalInfo--name {
+    color: $blue-ocean;
+  }
+}
+
+.palette-6 {
+  .card__rrss--item {
+    color: $lavende;
+    border: 2px solid $sand;
+  }
+  .card__personalInfo {
+    border-left: 5px solid $green-lime;
+  }
+  .card__personalInfo--name {
+    color: $lavende;
+  }
+}
+
 @media (min-width: 768px) {
   /*.container-desing {
     width: 329px;
