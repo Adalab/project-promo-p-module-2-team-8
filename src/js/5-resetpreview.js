@@ -10,6 +10,7 @@ function handleClickReset() {
 }
 
 function resetCard() {
+  handleClickRadioUnique(event);
   cardPersonalInfo.innerHTML = 'Nombre Apellidos';
   cardJob.innerHTML = 'Front-End developer';
   iconEmail.href = '';
