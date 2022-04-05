@@ -16,6 +16,8 @@ function resetCard() {
   iconPhone.href = '';
   iconGithub.href = '';
   iconLinkedin.href = '';
+  profileImage.style = '';
+  profilePreview.style = '';
   dataObjets = {
     name: '',
     job: '',
