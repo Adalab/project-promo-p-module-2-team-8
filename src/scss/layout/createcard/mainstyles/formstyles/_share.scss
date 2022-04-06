@@ -65,8 +65,9 @@
   border-top: $white;
   border-right: $white;
   border-left: $white;
-  border-bottom: 1px solid $white-two;
+  border-bottom: 1px solid $white-three;
   padding: 20px 15px 30px 15px;
+
   @media all and (min-width: 768px) {
     width: 329px;
   }
@@ -76,6 +77,7 @@
     font-family: $OpenSansRegular;
     font-weight: 600;
     margin: 0 14px 5px 10px;
+    text-align: center;
   }
   &__link {
     color: $dull-orange;
@@ -91,7 +93,7 @@
     color: $white-three;
     font-family: OpenSans;
     font-size: 14px;
-    margin: 10px 33px 0 29px;
+    margin: 10px auto;
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     display: flex;

@@ -6,14 +6,16 @@ const iconPhone = document.querySelector('.js-iconPhone');
 const iconLinkedin = document.querySelector('.js-iconLinkedin');
 const iconGithub = document.querySelector('.js-iconGithub');
 const fillDiv = document.querySelector('.js-secondFieldset');
+
 let dataObjets = {
+  palette: 1,
   name: '',
   job: '',
-  email: '',
   phone: '',
-  photo: '',
+  email: '',
   linkedin: '',
   github: '',
+  photo: '',
 };
 
 function keyUpInputs(event) {

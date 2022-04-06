@@ -1,17 +1,4 @@
 'use strict';
-const addImageButton = document.querySelector('.js-secondFieldset__button');
-const createCard = document.querySelector('.js-thirdFieldset__button');
-const shareTwitter = document.querySelector('.js-fourFieldset__button');
-//revisar esto, afecta a formulario
-/*function addImage(event) {
-  event.preventDefault();
-}*/
-
-/*addImageButton.addEventListener('click', addImage);
-createCard.addEventListener('click', addImage);
-shareTwitter.addEventListener('click', addImage);*/
-
-// Change image functionality
 
 const fr = new FileReader();
 const fileField = document.querySelector('.js__profile-upload-btn');
@@ -44,6 +31,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  dataObjets.photo = fr.result;
 }
 
 /**

@@ -1,31 +1,47 @@
-/*'use strict';
-function handleClickCreateCard{
-    event.preventDefault();
+'use strict';
 
-  fetch(
-    'https://awesome-profile-cards.herokuapp.com/card',
-    {
+const createButton = document.querySelector('.js_create_button');
+const twitterButton = document.querySelector('.js-twitterButton');
+const urlCard = document.querySelector('.js_url_card');
+const createCard = document.querySelector('.js-fourFieldset');
+const cardMessage = document.querySelector('.js-errorCard');
+
+function handleClickCreateButton(event) {
+  event.preventDefault();
+
+  if (
+    dataObjets.palette !== '' &&
+    dataObjets.name !== '' &&
+    dataObjets.job !== '' &&
+    dataObjets.email !== '' &&
+    dataObjets.linkedin !== '' &&
+    dataObjets.github !== '' &&
+    dataObjets.photo !== ''
+  ) {
+    fetch('//awesome-profile-cards.herokuapp.com/card', {
       method: 'POST',
-      header: {'Content-Type': 'application/json'},
-      body: JSON.stringify(data)
-    }
-    )
-  .then(response => response.json())
-  .then(serverResp => {
-    console.log(serverResp);
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(dataObjets),
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.success) {
+          urlCard.innerHTML = result.cardURL;
+          urlCard.href = result.cardURL;
+          createCard.classList.remove('collapsed');
+          cardMessage.innerHTML = 'La tarjeta ha sido creada:';
+        }
+      });
+  } else {
+    cardMessage.innerHTML = 'Rellena todos los datos del formulario';
+  }
+}
 
-    if(serverResp.success === false) {
-        shareTwitter.innerHTML = 'Debes rellenar todos los datos para crear la tarjeta';
-    }
-    else {
-        shareTwitter.href = 'serverResp';
-    }
+function twitterShare(event) {
+  event.preventDefault();
+  let url = `https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20con%20el%20Awesome%20profile%20cards%20del%20equipo%20Ninfas&url=${urlCard.href}`;
+  window.location.href = url;
+}
 
-  });
-
-};
-createCard.addEventListener('click',handleClickCreateCard);
-*/
-
-
-
+createButton.addEventListener('click', handleClickCreateButton);
+twitterButton.addEventListener('click', twitterShare);

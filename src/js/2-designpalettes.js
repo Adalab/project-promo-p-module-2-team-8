@@ -12,6 +12,7 @@ function handleClickRadioUnique(event) {
   previewContainer.classList.remove('palette-5');
   previewContainer.classList.remove('palette-6');
   previewContainer.classList.add(paletteClassToAdd);
+  dataObjets.palette = event.currentTarget.value;
 }
 
 for (const eachRadioButton of allRadioButtons) {
