@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 function handleClickCreateCard{
     event.preventDefault();
 
@@ -23,10 +23,9 @@ function handleClickCreateCard{
 
   });
 
-}
-
-createCard.addEventListener('click',handleClickCreateCard);
 };
+createCard.addEventListener('click',handleClickCreateCard);
+*/
 
 
 
