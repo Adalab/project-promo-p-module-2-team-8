@@ -9,6 +9,10 @@
   border-right: $white;
   border-left: $white;
   border-bottom: 1px solid $white-two;
+  .creating {
+    background-color: $white;
+    border: 0;
+  }
   @media all and (min-width: 768px) {
     width: 329px;
   }

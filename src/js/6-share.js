@@ -18,6 +18,8 @@ function handleClickCreateButton(event) {
     dataObjets.github !== '' &&
     dataObjets.photo !== ''
   ) {
+    createButton.classList.add('creating');
+
     fetch('//awesome-profile-cards.herokuapp.com/card', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
