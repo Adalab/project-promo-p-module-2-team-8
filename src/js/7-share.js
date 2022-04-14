@@ -44,6 +44,6 @@ function twitterShare(event) {
   const url = `https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20con%20el%20Awesome%20profile%20cards%20del%20equipo%20Ninfas&url=${urlCard.href}`;
   window.open(url, '_blank');
 }
-
+getLocalStorage();
 createButton.addEventListener('click', handleClickCreateButton);
 twitterButton.addEventListener('click', twitterShare);

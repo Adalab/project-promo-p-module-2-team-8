@@ -35,6 +35,7 @@ function keyUpInputs(event) {
   } else if (ElementTyping.id === 'addGithub') {
     dataObjets.github = ElementTyping.value;
   }
+  localStorage.setItem('savedInfo', JSON.stringify(dataObjets));
   renderPreview();
 }
 
@@ -45,14 +46,14 @@ function renderPreview() {
     cardPersonalInfo.innerHTML = dataObjets.name;
   }
   if (dataObjets.job === '') {
-    cardJob.innerHTML = 'Frontend developer';
+    cardJob.innerHTML = 'Front-End developer';
   } else {
     cardJob.innerHTML = dataObjets.job;
   }
 
   iconEmail.href = `mailto: ${dataObjets.email}`;
-  iconLinkedin.href = dataObjets.linkedin;
-  iconGithub.href = dataObjets.github;
+  iconLinkedin.href = `https://www.linkedin.com/in/${dataObjets.linkedin}`;
+  iconGithub.href = `https://www.github.com/${dataObjets.github}`;
   iconPhone.href = `tel: ${dataObjets.phone}`;
 }
 

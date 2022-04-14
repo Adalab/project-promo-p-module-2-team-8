@@ -9,7 +9,7 @@ function handleClickReset() {
 
 function resetCard() {
   handleClickRadioUnique(event);
-  cardPersonalInfo.innerHTML = 'Nombre Apellidos';
+  cardPersonalInfo.innerHTML = 'Nombre Apellido';
   cardJob.innerHTML = 'Front-End developer';
   iconEmail.href = '';
   iconPhone.href = '';
@@ -31,6 +31,7 @@ function resetCard() {
   for (let index = 0; index < input.length; index++) {
     input[index].value = '';
   }
+  localStorage.removeItem('savedInfo');
 }
 
 reset.addEventListener('click', handleClickReset);
